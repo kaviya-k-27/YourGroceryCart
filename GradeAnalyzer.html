@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GradeAnalyzer</title>
+    <link rel="stylesheet" href="GradeAnalyzer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1><i class="fa-solid fa-chart-column"></i>Grade  Analyzer</h1>
+            <p>Input student   scores and analyze them using various methods.</p>
+        </div>
+        <div class="inputPart">
+            <h2>Input Student Grades</h2>
+            <p>Enter the student's name and their corresponding score to add them to the list. This section allows for direct data entry into the system.</p>
+            <br>Student Name :<br>
+            <input type="text" placeholder="e.g., Alice Smith" id="stdname"><br>
+            Score (0-100) :<br>
+            <input type="Number" placeholder="e.g., 85" id="mark"><br>
+            <p id="notvalid"></p>
+            <button onclick="AddStudent()"> Add Student </button>
+        </div>
+        <div class="currentGrades">
+            <h2>Current Grades</h2>
+            <p>This list displays all students and their scores currently in the system. You can observe the raw data here before applying any analysis.</p>
+               <div id="out">
+                <div class="name"> <p id="output1"></p></div>
+                <div class="mark"> <p id="output2"></p></div>
+        </div>
+        </div>
+        <div class="last">
+            <h3>Analysis & Insights</h3>
+            <p>Explore various analytical insights from the student grades. Use the filters and sorting options to gain a deeper understanding of the performance data.</p>
+            <div class="finalOutput">
+            <div id="one">   Average Score : <br><b id="avg"> </b></div>
+            <div id="two"> Highest Score : <br><b id="high"></b></div>
+            <div id="three"> Lowest Score :<br><b id="low"></b></div>
+        </div>
+        </div>
+        
+
+    </div>
+</body>
+<script src="GradeAnalyzer.js"></script>
+</html>
