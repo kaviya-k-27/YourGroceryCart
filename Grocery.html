@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Cart</title>
+    <link rel="stylesheet" href="Grocery.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head> 
+<body>
+    <div class="main">
+        <div class="first"><h1><i class="fas fa-shopping-cart"></i>&nbsp;&nbsp;Your Grocery Cart</h1>
+        <p>Manage your items, see your total, and apply discounts seamlessly.</p></div>
+        <div class="additem">
+            <h3>Add New Item </h3>
+            <p>Use the form below to add products to your shopping cart. Please provide the item name, its price per unit, and the quantity you wish to add.</p>
+         <br>Item Name :<br>
+         <input type="text" id="addItems" placeholder="e.g., Organic Apples "><br>
+         <div class="rate">
+            <div class="one">Price ($) :<br>
+           <input type="text" id="prices" placeholder="e.g., 2.99 "></div>
+           <div class="two">Quantity :<br>
+           <input type="number" id="qualityin" placeholder="Enter Quality"></div>
+         </div><br>
+         <button id="addbutton" onclick="addclick()">Add to cart</button>
+        </div>
+        <div class="display">
+            <h3>Your Cart </h3>
+            <p>Review the items
+                 currently in your cart. You can adjust quantities or remove items as needed. The item subtotal will update automatically.
+                </p>
+                <div id="output">
+                    <!-- <div class="out1">
+                        <h4 id="itemName"></h4>
+                        <p id="price"></p>
+                    </div>
+                    <div id="out2">
+                        <ul>
+                             <li><p id="qualityNo"></p></li>
+                            <li><p id="rate"></p></li>
+                            <li id="bn"></li> -->
+                        <!-- </ul>
+                    </div>
+                </div>    
+                <div id="border" oncanplay="remove()"></div>   --> 
+        </div>
+    </div> 
+    <script src="Grocery.js"></script>
+</body>
+</html>
